@@ -142,3 +142,9 @@ content {
     text-align: justify;
     color: rgb(120, 120, 120);
 }
+
+.motokosa-img {
+    width: 180px;
+    height: auto;
+  }
+  
