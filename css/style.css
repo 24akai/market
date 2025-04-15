@@ -43,7 +43,7 @@ content {
 }
 
 .item {
-    min-width: 200px;
+    width: 200px;
     min-height: 400px;
     margin-bottom: 10px;
     padding: 10px;
@@ -145,6 +145,6 @@ content {
 
 .motokosa-img {
     margin-top: 20px;
-    width: 250px;
+    width: 210px;
     height: auto;
 }
