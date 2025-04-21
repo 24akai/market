@@ -32,6 +32,23 @@ console.log('Перевірка підключеного файлу скрипт
     //console.log('Блок товарів не знайдено')
 //}
 
+
+/*async function getObjectsFromFile(file) {
+    try {
+      const response = await fetch(file);
+      if (!response.ok) {
+        throw new Error(`HTTP помилка! статус: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Помилка fetching JSON:', error);
+    } finally {
+      console.log('Fetch завершено!');
+    }
+  }*/
+
+
 let itemsArray = [
     'Газонокосарка 43',
     'Електричний тример 110',
@@ -76,3 +93,4 @@ itemsArray.forEach((item, index) => {
 /*for (let i = 0; i < itemsArray.length; i++){
     console.log(i + 'й елемент: ', itemsArray[i])
 }*/
+
