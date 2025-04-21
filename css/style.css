@@ -47,12 +47,11 @@ content {
     min-height: 400px;
     margin-bottom: 10px;
     padding: 10px;
-
     background-color: #ffffff;
-
     border: 1px solid rgb(194, 194, 194);
     border-radius: 5px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    
 }
 
 .item-title {

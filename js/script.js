@@ -1,7 +1,7 @@
 
 console.log('Перевірка підключеного файлу скриптів script.js')
 
-let itemsDiv = document.getElementById("items");
+//let itemsDiv = document.getElementById("items");
 
 // if (itemsDiv) {
 //     console.log(itemsDiv)
@@ -17,16 +17,60 @@ let itemsDiv = document.getElementById("items");
 // }
 
 
-if (itemsDiv) {
-    console.log(itemsDiv)
+//if (itemsDiv) {
+    //console.log(itemsDiv)
+
     /*itemsDiv.innerHTML += '<div class = "item"></div>'
     itemsDiv.innerHTML += '<div class = "item"></div>'
     itemsDiv.innerHTML += '<div class = "item"></div>'
     itemsDiv.innerHTML += '<div class = "item"></div>'*/
-    for (let i = 0; i < 100; i++) {
+    /*for (let i = 0; i < 100; i++) {
         itemsDiv.innerHTML += '<div class = "item"></div>'
-    }
+    }*/
     
-} else {
+//} else {
+    //console.log('Блок товарів не знайдено')
+//}
+
+let itemsArray = [
+    'Газонокосарка 43',
+    'Електричний тример 110',
+    'Електрична газонокосарка 32',
+    'Акумуляторний оприскувач 12 N',
+  ];
+  
+  let itemsDiv = document.getElementById("items");
+
+itemsArray.forEach((item, index) => {
+    itemsDiv.innerHTML +=
+     `
+      <div class="item">
+        <h2>Товар №${index + 1} з ${itemsArray.length}</h2>
+        <p>${item}</p>
+      </div>
+    `;
+  })
+
+/*if (itemsDiv) {
+    itemsArray.forEach((item) => {
+      itemsDiv.innerHTML += '<div class = "item"></div>'
+    })
+  } else {
     console.log('Блок товарів не знайдено')
-}
+  }*/
+
+/*itemsArray.sort().forEach((item) => {
+    console.log(item)
+})*/
+
+/*itemsArray.sort().forEach((item, index) => {
+    console.log(index + '-й елемент: ', item)
+  })*/
+
+//console.log(itemsArray)
+
+//itemsArray = itemsArray.sort()
+
+/*for (let i = 0; i < itemsArray.length; i++){
+    console.log(i + 'й елемент: ', itemsArray[i])
+}*/
