@@ -16,7 +16,6 @@ console.log('Перевірка підключеного файлу скрипт
 //     console.log('Блок товарів не знайдено')
 // }
 
-
 //if (itemsDiv) {
     //console.log(itemsDiv)
 
@@ -27,48 +26,29 @@ console.log('Перевірка підключеного файлу скрипт
     /*for (let i = 0; i < 100; i++) {
         itemsDiv.innerHTML += '<div class = "item"></div>'
     }*/
-    
 //} else {
     //console.log('Блок товарів не знайдено')
 //}
 
 
-/*async function getObjectsFromFile(file) {
-    try {
-      const response = await fetch(file);
-      if (!response.ok) {
-        throw new Error(`HTTP помилка! статус: ${response.status}`);
-      }
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error('Помилка fetching JSON:', error);
-    } finally {
-      console.log('Fetch завершено!');
+
+async function getObjectsFromFile(file) {
+  try {
+    const response = await fetch(file);
+    if (!response.ok) {
+      throw new Error(`HTTP помилка! статус: ${response.status}`);
     }
-  }*/
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Помилка fetching JSON:', error);
+  } finally {
+    console.log('Fetch завершено!');
+  }
+}
 
 
-let itemsArray = [
-    'Газонокосарка 43',
-    'Електричний тример 110',
-    'Електрична газонокосарка 32',
-    'Акумуляторний оприскувач 12 N',
-    'Газонокосарка 430',
-    'Електричний тример',
-  ];
-  
-  let itemsDiv = document.getElementById("items");
-
-itemsArray.forEach((item, index) => {
-    itemsDiv.innerHTML +=
-     `
-      <div class="item">
-        <h2>Товар №${index + 1} з ${itemsArray.length}</h2>
-        <p>${item}</p>
-      </div>
-    `;
-  })
+buildItems();
 
 /*if (itemsDiv) {
     itemsArray.forEach((item) => {
@@ -77,19 +57,14 @@ itemsArray.forEach((item, index) => {
   } else {
     console.log('Блок товарів не знайдено')
   }*/
-
 /*itemsArray.sort().forEach((item) => {
     console.log(item)
 })*/
-
 /*itemsArray.sort().forEach((item, index) => {
     console.log(index + '-й елемент: ', item)
   })*/
-
 //console.log(itemsArray)
-
 //itemsArray = itemsArray.sort()
-
 /*for (let i = 0; i < itemsArray.length; i++){
     console.log(i + 'й елемент: ', itemsArray[i])
 }*/
