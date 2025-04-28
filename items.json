@@ -14,7 +14,8 @@
     "paw": "4",
     "pb": "5",
     "standart_price": "2199",
-    "price": "1799"
+    "price": "1799",
+    "bonus_price": "1999"
     },
     {
     "title": "Газонокосарка 32",
@@ -31,7 +32,8 @@
     "paw": "5",
     "pb": "7",
     "standart_price": "3299",
-    "price": "2699"
+    "price": "2699",
+    "bonus_price": "2999"
     },
     {
     "title": "Газонокосарка 430",

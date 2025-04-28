@@ -61,7 +61,7 @@ async function buildItems(){
     itemDiv.classList.add("item");
 
     itemDiv.innerHTML = `
-    <div class="item">
+    
   <div class="item-title">${item.title}</div>
 
   <div class="item-image">
@@ -82,7 +82,7 @@ async function buildItems(){
     ціна за купоном
     <div><span>${item.bonus_price}</span><sup>грн</sup></div>
   </div>
-</div>
+
     `
 
     itemsDiv.appendChild(itemDiv);
