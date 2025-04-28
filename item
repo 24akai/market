@@ -13,10 +13,6 @@
   <div class="price">
     <div><span>5499</span><sup>грн</sup></div>
     <div><span>4497</span><sup>грн</sup></div>
+    
+    <div>ціна за купоном<span>4395</span><sup>грн</sup></div>
   </div>
-
-  <div class="price bonus">
-    ціна за купоном
-    <div><span>4395</span><sup>грн</sup></div>
-  </div>
-</div>

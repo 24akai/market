@@ -78,7 +78,7 @@ async function buildItems(){
     <div><span>${item.price}</span><sup>грн</sup></div>
   </div>
 
-  <div class="price bonus">
+  <div class="price_bonus">
     ціна за купоном
     <div><span>${item.bonus_price}</span><sup>грн</sup></div>
   </div>
